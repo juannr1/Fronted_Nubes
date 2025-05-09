@@ -391,37 +391,54 @@
 </div>
 
 
-  <div class="container-fluid mt-5 ">
+  <div class="container mt-5 ">
     <div class="row ">
-<button type="button" class="col btn btn-primary mx-2 text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-hospital-fill me-3" viewBox="0 0 16 16">
+      <div class="col-4 p-0"><button type="button" class="col btn btn-primary p-lg-5 p-md-1 p-sm-0 text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-hospital-fill me-3" viewBox="0 0 16 16">
   <path d="M6 0a1 1 0 0 0-1 1v1a1 1 0 0 0-1 1v4H1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h6v-2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V16h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-3V3a1 1 0 0 0-1-1V1a1 1 0 0 0-1-1zm2.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1zM2.25 9h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 9.75v-.5A.25.25 0 0 1 2.25 9m0 2h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25M2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zM13.25 9h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25M13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25zm.25 1.75h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25"/>
-</svg>Servicios hospitalarios</button>
-<button type="button" class="col btn btn-primary mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-raised-hand me-3" viewBox="0 0 16 16">
-  <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207"/>
-  <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
-</svg>Guia Usuario</button>
-<button type="button" class="col btn btn-primary mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-prescription2 me-3" viewBox="0 0 16 16">
+</svg>Servicios Hospitalarios</button></div>
+
+
+<div class="col-4 p-0"><button type="button" class="col btn btn-primary p-lg-5 p-md-1 p-sm-0 text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+  <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+  <path d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"/>
+</svg>Guia Usuario</button></div>
+
+<div class="col-4 p-0"><button type="button" id="boton" class="col btn btn-primary p-lg-5 p-md-1 p-sm-0 text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-prescription2" viewBox="0 0 16 16">
   <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z"/>
   <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z"/>
-</svg>Medicamentos</button>
-<button type="button" class="col btn btn-primary mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-question-octagon-fill me-3" viewBox="0 0 16 16">
-  <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927"/>
-</svg>Preguntas frecuentes</button>
+</svg>Medicamentos</button></div>
+
+
+</div>
     </div>
   </div>
 
 
+</div>
+
   <div class="container-fluid mt-3">
     <div class="row ">
-<button type="button" class="col-lg-3 btn btn-primary mx-2 text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-map-fill me-3" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"/>
-</svg> Guia Ubicaciones</button>
-<button type="button" class="col-lg-3 btn btn-primary mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-fill me-3" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-</svg>Contactos de emergencia</button>
+
+
+      <div class="col-4 p-0 mb-5"><button type="button" class="col btn btn-primary p-lg-5 p-md-1 p-sm-0 text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-question-diamond" viewBox="0 0 16 16">
+  <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+  <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+</svg>Preguntas Frecuentes</button></div>
+
+      <div class="col-4 p-0 mb-5"><button type="button" class="col btn btn-primary p-lg-5 p-md-1 p-sm-0 text-center"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+</svg>Guia Ubicaciones</button></div>
+
+
+      <div class="col-4 p-0 mb-5 "><button type="button" class="col btn btn-primary p-lg-5 p-md-1 p-sm-0 text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2 2 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386"/>
+</svg>Contactos Emergencias</button></div>
 
 
     </div>
+  </div>
+  </div>
+  </div>
   </div>
 
    <!--PANEL AYUDA-->
@@ -429,80 +446,7 @@
 
   <!--MAPA-->
 
-  <section class="text-center bg-black">
-
-
-    <h3 class="mb-5 mt-5 bg-black pt-4">Contact us</h3>
   
-    <div class="row bg-black pb-4">
-      <div class="col-lg-5">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1771.4413307270809!2d-74.06248134111593!3d4.638397095255591!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a3afa3b2ddd%3A0xc4a329132653407e!2zQWsgNyAjNTItNDQsIEJvZ290w6E!5e0!3m2!1ses!2sco!4v1742317611593!5m2!1ses!2sco"
-          class="h-100 w-100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-  
-      <div class="col-lg-7">
-        <form>
-          <div class="row">
-            <div class="col-md-9">
-              <div class="row mb-4">
-                <div class="col-md-6 mb-4 mb-md-0">
-                  <div data-mdb-input-init class="form-outline">
-                    <input type="text" id="form3Example1" class="form-control" />
-                    <label class="form-label" for="form3Example1">Nombres</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div data-mdb-input-init class="form-outline">
-                    <input type="email" id="form3Example2" class="form-control" />
-                    <label class="form-label" for="form3Example2">Correo Electronico</label>
-                  </div>
-                </div>
-              </div>
-              <div data-mdb-input-init class="form-outline mb-4">
-                <input type="text" id="form3Example3" class="form-control" />
-                <label class="form-label" for="form3Example3">Asunto</label>
-              </div>
-              <div data-mdb-input-init class="form-outline mb-4">
-                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                <label class="form-label" for="form4Example3">Mensaje</label>
-              </div>
-              <div class="text-center text-md-start">
-                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary mb-5 mb-md-0 ">
-                  Enviar
-                </button>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <ul class="list-unstyled">
-                <li> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt-fill mb-2" viewBox="0 0 16 16">
-                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
-                </svg>
-                  <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
-                  <p><small>📍 Carrera 7 # 999-99, Bogotá</small></p>
-                </li>
-                <li> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-telephone-fill mt-2 mb-2" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-                </svg>
-                  <i class="fas fa-phone fa-2x text-primary"></i>
-                  <p><small>+57 308 277 5569</small></p>
-                </li>
-                <li> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope-fill mt-2 mb-2" viewBox="0 0 16 16">
-                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-                </svg>
-                  <i class="fas fa-envelope fa-2x text-primary"></i>
-                  <p><small>nb.contacto@healthcare.es</small></p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </form>
-  
-      </div>
-    </div>
-
-    
-  </section>
 
 <!--MAPA-->
 
