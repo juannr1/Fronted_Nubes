@@ -73,3 +73,12 @@ body {
     text-align: center;
     
   }
+
+  #botonAnimado {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#botonAnimado:hover {
+  transform: scale(1.1);
+  color: #0d6efd; /* opcional */
+}
