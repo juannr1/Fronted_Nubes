@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../complement.css">
      <!-- Barra de navegacion -->
 
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top p-0">
         <div class="container-fluid bg-black mt-0">
           <a class="navbar-brand" href="../index.html"><img src="imgs2/Logo.png" alt=" EPS Nubes" width="100rem"></a>
@@ -54,13 +55,28 @@
 
 </head>
 <body>
+<!-- Elementos de carga -->
+<div id="loader-container">
+    <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+		 <circle cx="170" cy="170" r="160" stroke="#0076e2"/>
+		 <circle cx="170" cy="170" r="135" stroke="#404041"/>
+		 <circle cx="170" cy="170" r="110" stroke="#0076e2"/>
+		 <circle cx="170" cy="170" r="85" stroke="#404041"/>
+	</svg>
+</div>
+
+
     <div class="container mt-5">
         <h5 class="text-center pricing-table-subtitle fw-bold text-black">PLAN DE PRECIOS DE AFILIACION</h5>
         <h1 class="text-center pricing-table-title mb-4 fw-bold text-black">Tabla De Precios</h1>
+</div>
+
         <div class="row">
+
           
           <!-- Basic -->
-
+         <div class="col-lg-4 mb-4">
+         <div class="container">
             <div class="card pricing-card mb-4">
               <div class="card-body text-center">
                 <div class="d-flex align-items-center justify-content-between">
@@ -81,8 +97,11 @@
               </div>
             </div>
           </div>
-      
+     
+
           <!-- Professional -->
+            
+         <div class="col-lg-4 mb-4">
 
           <div class="container">
             <div class="card pricing-card mb-4">
@@ -105,8 +124,9 @@
               </div>
             </div>
           </div>
-        </div>
+
           <!-- Enterprises -->
+       <div class="col-lg-4 mb-4">
            <div class="container">
             <div class="card pricing-card mb-4">
               <div class="card-body text-center">

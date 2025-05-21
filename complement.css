@@ -1,24 +1,3 @@
-#first {
-
-    
-    animation: zoomEffect 3s ease-in-out infinite;
-    
-    
-
-}
-
-@keyframes zoomEffect {
-    0% {
-        transform: scale(1); /* Estado inicial (sin zoom) */
-    }
-    50% {
-        transform: scale(1.1); /* Acercamiento (zoom in) */
-    }
-    100% {
-        transform: scale(1); /* Alejamiento (zoom out) */
-    }
-}
-
 
 
 
@@ -76,11 +55,154 @@ body {
 
   #botonAnimado {
   transition: transform 0.3s ease, color 0.3s ease;
+
 }
 
 #botonAnimado:hover {
   transform: scale(1.1);
   color: #0d6efd; /* opcional */
+}
+
+#botonAnimado {
+    transition: all 0.3s ease;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+#botonAnimado:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* SVG dentro de los botones - estilos base */
+#botonAnimado svg {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    flex-shrink: 0;
+}
+
+#botonAnimado span {
+    font-weight: 600;
+    line-height: 1.2;
+    display: block;
+}
+
+/* MÓVIL - Pantallas hasta 576px */
+@media (max-width: 575.98px) {
+    #botonAnimado {
+        width: 120px !important;
+        height: 85px !important;
+        padding: 10px 8px !important;
+        margin: 5px !important;
+        font-size: 11px !important;
+    }
+    
+    #botonAnimado svg {
+        width: 28px !important;
+        height: 28px !important;
+        margin-bottom: 6px !important;
+    }
+    
+    #botonAnimado span {
+        font-size: 11px !important;
+        line-height: 1.1 !important;
+    }
+    
+    /* Ajustar el contenedor de Bootstrap */
+    .col-6 {
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+    }
+}
+
+/* MÓVIL GRANDE - 576px a 767px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #botonAnimado {
+        width: 140px !important;
+        height: 95px !important;
+        padding: 12px 10px !important;
+        margin: 8px !important;
+        font-size: 12px !important;
+    }
+    
+    #botonAnimado svg {
+        width: 32px !important;
+        height: 32px !important;
+        margin-bottom: 8px !important;
+    }
+    
+    #botonAnimado span {
+        font-size: 12px !important;
+    }
+}
+
+/* TABLET - 768px a 991px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #botonAnimado {
+        width: 160px !important;
+        height: 110px !important;
+        padding: 15px 12px !important;
+        margin: 10px !important;
+        font-size: 14px !important;
+    }
+    
+    #botonAnimado svg {
+        width: 38px !important;
+        height: 38px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    #botonAnimado span {
+        font-size: 14px !important;
+    }
+}
+
+
+/* Ajustes adicionales para el contenedor */
+.container-fluid {
+    padding: 15px;
+}
+
+.row {
+    margin: 0;
+    justify-content: center;
+}
+
+/* Asegurar que los botones mantengan sus proporciones */
+#botonAnimado svg path {
+    vector-effect: non-scaling-stroke;
+}
+
+/* Efecto adicional para móvil */
+@media (max-width: 767.98px) {
+    #botonAnimado:active {
+        transform: scale(0.95);
+    }
+}
+
+/* Para pantallas muy grandes */
+@media (min-width: 1400px) {
+    #botonAnimado {
+        width: 220px !important;
+        height: 140px !important;
+        font-size: 17px !important;
+    }
+    
+    #botonAnimado svg {
+        width: 52px !important;
+        height: 52px !important;
+    }
+    
+    #botonAnimado span {
+        font-size: 17px !important;
+    }
 }
 
 
@@ -89,7 +211,7 @@ body {
 #plan1, #plan2, #plan3 {
   width: 79.65px !important;
   height: 84.2px !important;
-  background-color: #212529 !important; /* Para que coincida con el color oscuro del otro badge */
+  background-color: #212529 !important; 
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
@@ -100,4 +222,61 @@ body {
 #plan1 p,#plan2 p, #plan3 p {
   margin: 0 !important;
   text-align: center !important;
+}
+
+
+
+#loader-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+    
+}
+
+/* Para que gire el elemento de carga */
+.loader {
+	max-width: 15rem;
+	width: 100%;
+	height: auto;
+	stroke-linecap: round;
+}
+
+circle {
+	fill: none;
+	stroke-width: 3.5;
+	animation-name: preloader;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	transform-origin: 170px 170px;
+	will-change: transform;
+
+	&:nth-of-type(1) {
+		stroke-dasharray: 550px;
+	}
+
+	&:nth-of-type(2) {
+		stroke-dasharray: 500px;
+	}
+
+	&:nth-of-type(3) {
+		stroke-dasharray: 450px;
+	}
+
+	&:nth-of-type(4) {
+		stroke-dasharray: 300px;
+	}
+
+
+}
+
+@keyframes preloader {
+	50% {
+		transform: rotate(360deg);
+	}
 }
