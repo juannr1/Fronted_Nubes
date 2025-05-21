@@ -82,3 +82,22 @@ body {
   transform: scale(1.1);
   color: #0d6efd; /* opcional */
 }
+
+
+
+
+#plan1, #plan2, #plan3 {
+  width: 79.65px !important;
+  height: 84.2px !important;
+  background-color: #212529 !important; /* Para que coincida con el color oscuro del otro badge */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 1rem !important;
+}
+
+#plan1 p,#plan2 p, #plan3 p {
+  margin: 0 !important;
+  text-align: center !important;
+}
