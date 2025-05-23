@@ -41,15 +41,15 @@ document.addEventListener("DOMContentLoaded", () => {
   axios.get('http://localhost:3000/servicios/1')
   .then(response => {
       
-    const valores_Convertidos = response.data;
-    document.getElementById("plan1").innerHTML = valores_Convertidos.Plan;
-    document.getElementById("resultado").innerHTML = valores_Convertidos.Precio;
-    document.getElementById("icono1").innerHTML = valores_Convertidos.Icono;
-    document.getElementById("Texto").innerHTML = valores_Convertidos.Servicio;
+    const valores_Convertidos = response.data[0];
+    document.getElementById("plan1").innerHTML = valores_Convertidos.plan;
+    document.getElementById("resultado").innerHTML = valores_Convertidos.precio;
+    document.getElementById("icono1").innerHTML = valores_Convertidos.icono;
+    document.getElementById("Texto").innerHTML = valores_Convertidos.servicios;
 
 
     // manejar respuesta exitosa
-    console.log("success");
+    console.log(valores_Convertidos);
 
   })
   .catch(function (error) {
@@ -66,11 +66,11 @@ document.addEventListener("DOMContentLoaded", () => {
     axios.get('http://localhost:3000/servicios/2')
   .then(response => {
       
-    const valores_Convertidos = response.data;
-    document.getElementById("plan2").innerHTML = valores_Convertidos.Plan;
-    document.getElementById("resultado2").innerHTML = valores_Convertidos.Precio;
-    document.getElementById("icono2").innerHTML = valores_Convertidos.Icono;
-    document.getElementById("Texto2").innerHTML = valores_Convertidos.Servicio;
+    const valores_Convertidos = response.data[0];
+    document.getElementById("plan2").innerHTML = valores_Convertidos.plan;
+    document.getElementById("resultado2").innerHTML = valores_Convertidos.precio;
+    document.getElementById("icono2").innerHTML = valores_Convertidos.icono;
+    document.getElementById("Texto2").innerHTML = valores_Convertidos.servicios;
 
 
     // manejar respuesta exitosa
@@ -91,11 +91,11 @@ document.addEventListener("DOMContentLoaded", () => {
     axios.get('http://localhost:3000/servicios/3')
     .then(response => {
       
-    const valores_Convertidos = response.data;
-    document.getElementById("plan3").innerHTML = valores_Convertidos.Plan;
-    document.getElementById("resultado3").innerHTML = valores_Convertidos.Precio;
-    document.getElementById("icono3").innerHTML = valores_Convertidos.Icono;
-    document.getElementById("Texto3").innerHTML = valores_Convertidos.Servicio;
+    const valores_Convertidos = response.data[0];
+    document.getElementById("plan3").innerHTML = valores_Convertidos.plan;
+    document.getElementById("resultado3").innerHTML = valores_Convertidos.precio;
+    document.getElementById("icono3").innerHTML = valores_Convertidos.icono;
+    document.getElementById("Texto3").innerHTML = valores_Convertidos.servicios;
 
 
     // manejar respuesta exitosa

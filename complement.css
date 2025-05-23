@@ -280,3 +280,46 @@ circle {
 		transform: rotate(360deg);
 	}
 }
+
+
+
+/* MÓVIL - Pantallas hasta 576px */
+@media (max-width: 575.98px) {
+    #imagenes {
+        width: 70px !important;
+        height: 70px !important;
+  
+        margin-right: 15px !important;
+        font-size: 11px !important;
+    }
+    
+ 
+}
+
+/* MÓVIL GRANDE - 576px a 767px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #imagenes {
+        width: 60px !important;
+        height: 60px !important;
+  
+        margin-right: 15px !important;
+        font-size: 12px !important;
+    }
+    
+
+}
+
+/* TABLET - 768px a 991px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #imagenes {
+        width: 70px !important;
+        height: 70px !important;
+
+        margin: 15px !important;
+        font-size: 14px !important;
+    }
+    
+  
+}
+
+
