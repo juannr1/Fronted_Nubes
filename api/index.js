@@ -12,10 +12,10 @@ app.use(express.json())
 
 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: 'yamanote.proxy.rlwy.net',
   user: 'root',
-  password: '',
-  database: 'datosprecios'
+  password: 'IirImDUDKzCOEOhasRGTDallvwAiGzZq',
+  database: 'railway'
 
 });
 
@@ -26,7 +26,7 @@ connection.addListener('error', (err) => {
 
 
 app.get('/servicios', (req, res) => {            
-  const query = 'SELECT * FROM datosabackend' 
+  const query = 'SELECT * FROM railway.servicios' 
 
   connection.query(query, function (error, results) 
   { if (error) {
