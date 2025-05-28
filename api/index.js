@@ -36,26 +36,15 @@ app.get('/servicios', (req, res) => {
 })});
 
 
+app.get('/especialidades', (req, res) => {            
+  const query = 'SELECT * FROM servicios' 
 
-
-
-
-app.get('/servicios/:id', (req, res) => {
-  const TypeId = req.params.id;
-  const query = 'SELECT * FROM datosabackend WHERE typeId = ?';
-
-  connection.query(query, [TypeId], function (error, results) {
-    if (error) {
+  connection.query(query, function (error, results) 
+  { if (error) {
       console.error('Error executing query:', error);
       res.status(500).send('Error executing query');
-    } else {
-      res.send(results);
-    }
-  });
-
-})
-
-
+  } else res.send(results)
+})});
 
 
 

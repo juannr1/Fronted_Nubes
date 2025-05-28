@@ -322,4 +322,588 @@ circle {
   
 }
 
+@media (min-width: 1400px) and (max-width: 1440px) {
+  #esp1,
+  #esp2,
+  #esp3,
+  #esp4,
+  #esp5,
+  #esp6 {
+    width: 406px;
+    height: 406px;
+    object-fit: cover;
 
+  }
+}
+
+@media (min-width: 900px) {
+  #esp1,
+  #esp2,
+  #esp3,
+  #esp4,
+  #esp5,
+  #esp6 {
+    width: 348px;
+    height: 406px;
+    object-fit: cover;
+  }
+}
+
+#botonZoom {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+#botonZoom:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al 110% */
+}
+
+
+@media (min-width: 1400px) and (max-width: 1800px) {
+  #ex1,
+  #ex2,
+  #ex3,
+  #ex4,
+  #ex5,
+  #ex6 {
+    width: 480px;
+    height: 338px;
+    object-fit: cover;
+
+  }
+}
+
+@media (min-width: 768px) {
+  #ex1,
+  #ex2,
+  #ex3,
+  #ex4,
+  #ex5,
+  #ex6 {
+    width: 348px;
+    height: 232px;
+    object-fit: cover;
+  }
+}
+
+  #masServiciosPanel {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            display: none;
+            overflow-y: auto; /* Scroll del modal */
+            padding: 20px;
+        }
+
+        /* Contenedor interno del modal */
+        .modal-inner-container {
+            background: white;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            min-height: calc(100vh - 40px);
+            padding: 60px 30px 30px 30px;
+        }
+
+        /* Botón de cerrar */
+        .btn-cerrar {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-cerrar:hover {
+            background-color: #f8f9fa;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Evitar scroll del body cuando modal está abierto */
+        body.modal-open {
+            overflow: hidden;
+        }
+
+        /* Resto de tus estilos existentes */
+        #loaderContent2 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loader2 {
+            width: 150px;
+            height: 150px;
+        }
+
+        /* Estilos para las cards */
+        .card {
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
+
+        #esp7 {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        /* Media queries para responsive */
+        @media (max-width: 768px) {
+            .modal-inner-container {
+                margin: 10px;
+                padding: 50px 20px 20px 20px;
+                min-height: calc(100vh - 20px);
+            }
+            
+            .btn-cerrar {
+                top: 10px;
+                right: 15px;
+                font-size: 24px;
+            }
+        }
+
+
+        /*2DO CONTENEDOR*/
+
+         #masServiciosPanel2 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            display: none;
+            overflow-y: auto; /* Scroll del modal */
+            padding: 20px;
+        }
+
+        /* Contenedor interno del modal */
+        .modal-inner-container2 {
+            background: white;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            min-height: calc(100vh - 40px);
+            padding: 60px 30px 30px 30px;
+        }
+
+        /* Botón de cerrar */
+        .btn-cerrar2 {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-cerrar2:hover {
+            background-color: #f8f9fa;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Evitar scroll del body cuando modal está abierto */
+        body.modal-open {
+            overflow: hidden;
+        }
+
+
+
+
+/*3ER CONTENEDOR*/
+
+
+        #masServiciosPanel3 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            display: none;
+            overflow-y: auto; /* Scroll del modal */
+            padding: 20px;
+        }
+
+        /* Contenedor interno del modal */
+        .modal-inner-container3 {
+            background: white;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            min-height: calc(100vh - 40px);
+            padding: 60px 30px 30px 30px;
+        }
+
+        /* Botón de cerrar */
+        .btn-cerrar3 {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-cerrar3:hover {
+            background-color: #f8f9fa;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Evitar scroll del body cuando modal está abierto */
+        body.modal-open {
+            overflow: hidden;
+        }
+
+
+
+/*4TO CONTENEDOR*/
+
+         #masServiciosPanel4 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            display: none;
+            overflow-y: auto; /* Scroll del modal */
+            padding: 20px;
+        }
+
+        /* Contenedor interno del modal */
+        .modal-inner-container4 {
+            background: white;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            min-height: calc(100vh - 40px);
+            padding: 60px 30px 30px 30px;
+        }
+
+        /* Botón de cerrar */
+        .btn-cerrar4 {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-cerrar4:hover {
+            background-color: #f8f9fa;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Evitar scroll del body cuando modal está abierto */
+        body.modal-open {
+            overflow: hidden;
+        }
+
+
+/*5TO CONTENEDOR*/
+
+
+        #masServiciosPanel5 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            display: none;
+            overflow-y: auto; /* Scroll del modal */
+            padding: 20px;
+        }
+
+        /* Contenedor interno del modal */
+        .modal-inner-container5 {
+            background: white;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            min-height: calc(100vh - 40px);
+            padding: 60px 30px 30px 30px;
+        }
+
+        /* Botón de cerrar */
+        .btn-cerrar5 {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-cerrar5:hover {
+            background-color: #f8f9fa;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Evitar scroll del body cuando modal está abierto */
+        body.modal-open {
+            overflow: hidden;
+        }
+
+
+/*6TO CONTENEDOR*/
+
+
+         #masServiciosPanel6 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            display: none;
+            overflow-y: auto; /* Scroll del modal */
+            padding: 20px;
+        }
+
+        /* Contenedor interno del modal */
+        .modal-inner-container6 {
+            background: white;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            min-height: calc(100vh - 40px);
+            padding: 60px 30px 30px 30px;
+        }
+
+        /* Botón de cerrar */
+        .btn-cerrar6 {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-cerrar6:hover {
+            background-color: #f8f9fa;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Evitar scroll del body cuando modal está abierto */
+        body.modal-open {
+            overflow: hidden;
+        }
+
+
+/*7MO CONTENEDOR*/
+
+
+         #masServiciosPanel7 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            display: none;
+            overflow-y: auto; /* Scroll del modal */
+            padding: 20px;
+        }
+
+        /* Contenedor interno del modal */
+        .modal-inner-container7 {
+            background: white;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            min-height: calc(100vh - 40px);
+            padding: 60px 30px 30px 30px;
+        }
+
+        /* Botón de cerrar */
+        .btn-cerrar7 {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-cerrar7:hover {
+            background-color: #f8f9fa;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Evitar scroll del body cuando modal está abierto */
+        body.modal-open {
+            overflow: hidden;
+        }
+
+
+/*8vO CONTENEDOR*/
+
+
+         #masServiciosPanel8 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 998;
+            display: none;
+            overflow-y: auto; /* Scroll del modal */
+            padding: 20px;
+        }
+
+        /* Contenedor interno del modal */
+        .modal-inner-container8 {
+            background: white;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            min-height: calc(100vh - 40px);
+            padding: 60px 30px 30px 30px;
+        }
+
+        /* Botón de cerrar */
+        .btn-cerrar8 {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 28px;
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-cerrar8:hover {
+            background-color: #f8f9fa;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Evitar scroll del body cuando modal está abierto */
+        body.modal-open {
+            overflow: hidden;
+        }
