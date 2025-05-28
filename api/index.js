@@ -26,7 +26,7 @@ connection.addListener('error', (err) => {
 
 
 app.get('/servicios', (req, res) => {            
-  const query = 'SELECT * FROM railway.servicios' 
+  const query = 'SELECT * FROM servicios' 
 
   connection.query(query, function (error, results) 
   { if (error) {
