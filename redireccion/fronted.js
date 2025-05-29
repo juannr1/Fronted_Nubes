@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // modulo 1
 
-  axios.get('http://localhost:3000/servicios')
+  axios.get('https://backend-epsnubes.onrender.com/servicios')
   .then(response => {
       
     const valores_Convertidos = response.data[0];
@@ -105,7 +105,7 @@ document.getElementById("boton1").addEventListener("click", (e) => {
     }
 
     // Llamada al servidor
-    axios.get('http://localhost:3000/especialidades')
+    axios.get('https://backend-epsnubes.onrender.com/especialidades')
         .then(response => {
             const valores_Convertidos = response.data[0];
             document.getElementById("insert1").innerHTML = valores_Convertidos.card1_1;
